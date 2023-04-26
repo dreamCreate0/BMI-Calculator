@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    <form>
+      <div class="form-group">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" class="form-control" id="weight" placeholder="Enter your weight">
+      </div>
+      <div class="form-group">
+        <label for="height">Height (cm):</label>
+        <input type="number" class="form-control" id="height" placeholder="Enter your height">
+      </div>
+      <button type="button" class="btn btn-primary" onclick="calculateBMI()">Calculate BMI</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+  <div class="details">
+  <p>Body Mass Index (BMI) is a measurement that helps you determine whether your weight is healthy for your height. It is calculated by dividing your weight in kilograms by your height in meters squared. BMI is a widely used method to assess whether a person is underweight, normal weight, overweight, or obese.</p>
+
+  <p>Knowing your BMI can be helpful in identifying health risks associated with being underweight or overweight. 
+    <ul>
+      <li>BMI less than 18.5 is considered underweight</li>
+      <li>BMI between 18.5 and 24.9 is considered normal weight</li>
+      <li>BMI between 25 and 29.9 is considered overweight</li>
+      <li>BMI of 30 or higher is considered obese</li>
+  </ul>
+  </p>
+
+  <p>However, it's important to note that BMI is just one factor to consider when assessing your health. It doesn't take into account factors such as muscle mass, bone density, and body composition. Therefore, it's important to consult with your healthcare provider to determine if your BMI is a healthy range for you.</p>
+</div>
+<div style="background:#777; text-align: center; padding:5%;">
+<p class="cp-text">
+    © Copyright 2023 Dream Create. All rights reserved.
+</p></div>
+</body>
+</html>
